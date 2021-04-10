@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                         http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0"
+         metadata-complete="true">
+    <servlet>
+        <servlet-name>hello</servlet-name>
+        <servlet-class>com.henjie.HelloServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getservlet</servlet-name>
+        <servlet-class>com.henjie.GetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getservlet</servlet-name>
+        <url-pattern>/get</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>demo3</servlet-name>
+        <servlet-class>com.henjie.ServletDemo03</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>demo3</servlet-name>
+        <url-pattern>/d3</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ps</servlet-name>
+        <servlet-class>com.henjie.PropertiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ps</servlet-name>
+        <url-pattern>/ps</url-pattern>
+    </servlet-mapping>
+
+</web-app>
